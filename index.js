@@ -8,7 +8,8 @@ const router = require('./router');
 const mongoose = require('mongoose');
 
 //DB
-mongoose.connect('mongodb://admin:nimda@ds249565.mlab.com:49565/authpassport');
+// mongoose.connect('mongodb://admin:nimda@ds249565.mlab.com:49565/authpassport');
+mongoose.connect('mongodb://localhost:auth/authpassport');
 
 app.use(morgan('combined'));
 app.use(bodyParser.json({ type: '*/*'}));
